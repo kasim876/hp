@@ -1,0 +1,17 @@
+:root {
+  // colors
+
+  --primary: #2f6d5f;
+  --secondary: #eb874f;
+  --white: #fff;
+  --black: #000;
+
+  // values
+
+  --content-width: #{em(1130px)};
+  --container-offset: #{em(15px)};
+
+  // fonts
+
+  --font-family: "Raleway", sans-serif;
+}
