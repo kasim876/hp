@@ -1,0 +1,19 @@
+footer.footer 
+  .container.flex-container 
+    .footer__col
+      h2.footer__subtitle Контакты
+      a.footer__logo(href="index.html") 
+      include @cmps/Contacts/contacts
+      include @cmps/Socials/socials
+    form.footer__form(action="#" method="post") 
+      h2.footer__subtitle Уточнить детали
+      label.footer__field 
+        span.footer__caption Имя
+        input.input-reset.footer__input(type="text" name="name")
+      label.footer__field 
+        span.footer__caption Email
+        input.input-reset.footer__input(type="email" name="email")
+      label.footer__field 
+        span.footer__caption Сообщение
+        input.input-reset.footer__input(type="text" name="message")
+      button.btn-reset.btn-medium(type="submit") Отправить

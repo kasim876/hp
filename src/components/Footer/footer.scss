@@ -1,0 +1,75 @@
+@import "@cmps/Socials/socials";
+@import "@cmps/Contacts/contacts";
+
+.footer {
+  padding: var(--section-offset) 0;
+  background-image: url("../images/footer-bg.png");
+  background-position: 50% 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__subtitle {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: rem(30px);
+    line-height: 133%;
+    letter-spacing: -0.015em;
+  }
+
+  &__col {
+    .footer__subtitle {
+      margin-bottom: em(40px, 30px);
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 40px;
+    width: rem(187px);
+    height: rem(77px);
+    background-image: url("../images/logo-footer.png");
+  }
+
+  &__form {
+    border-radius: 6px;
+    padding: rem(30px) rem(50px);
+    width: 100%;
+    max-width: rem(445px);
+    box-shadow: 0 4px 12px rgba(36 59 54 / 32%);
+    background-color: var(--green);
+
+    .footer__subtitle {
+      margin-bottom: em(25px, 30px);
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: rem(20px);
+  }
+
+  &__caption {
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: 160%;
+    color: #9497a1;
+  }
+
+  &__input {
+    border-bottom: 1px solid #9497a1;
+    padding: 6px 0;
+    width: 100%;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: rem(14px);
+    line-height: 160%;
+    color: #292d33;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

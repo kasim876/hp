@@ -1,0 +1,28 @@
+.contacts {
+  margin-bottom: rem(40px);
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: rem(12px);
+    }
+
+    svg {
+      margin-right: rem(13px);
+      width: rem(30px);
+      height: rem(30px);
+      fill: var(--primary);
+    }
+  }
+
+  &__content {
+    display: block;
+    max-width: rem(170px);
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 160%;
+  }
+}

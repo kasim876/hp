@@ -35,3 +35,14 @@
     background-color: transparent;
   }
 }
+
+.btn-medium {
+  display: block;
+  padding: rem(10px);
+  width: 100%;
+  font-weight: 600;
+  font-size: rem(16px);
+  line-height: 150%;
+  color: var(--white);
+  background-color: var(--secondary);
+}
