@@ -1,0 +1,16 @@
+@import "@cmps/Navigation/nav";
+
+.header {
+  position: absolute;
+  padding: rem(15px) 0;
+  width: 100%;
+  background-color: var(--primary); /* после того, как добавится следующая секция будет: rgba(255 255 255 / 1%) */
+  backdrop-filter: blur(30px);
+
+  &__logo {
+    display: block;
+    width: rem(176px);
+    height: rem(73px);
+    background-image: url("../images/logo-header.png");
+  }
+}

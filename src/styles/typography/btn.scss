@@ -1,0 +1,16 @@
+.btn-small {
+  display: block;
+  border: 1px solid var(--secondary);
+  padding: rem(6px) rem(10px);
+  width: rem(175px);
+  font-weight: 600;
+  font-size: rem(18px);
+  line-height: 183%;
+  text-align: center;
+  color: var(--white);
+  transition: color 0.25s ease-in-out;
+
+  @include hover {
+    color: var(--secondary);
+  }
+}

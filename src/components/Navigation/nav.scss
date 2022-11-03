@@ -1,0 +1,40 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: rem(40px);
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: rem(18px);
+    line-height: 183%;
+    color: var(--white);
+    transition: color 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--secondary);
+      transition: width 0.25s ease-in-out, left 0.25s ease-in-out;
+    }
+
+    @include hover {
+      color: var(--secondary);
+
+      &::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
