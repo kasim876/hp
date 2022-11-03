@@ -1,0 +1,29 @@
+.hero {
+  padding-top: rem(190px);
+  padding-bottom: rem(125px);
+  background: var(--gradient);
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin: 0;
+    margin-bottom: em(20px, 50px);
+    font-weight: 800;
+    font-size: rem(50px);
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: em(50px, 24px);
+    max-width: rem(515px);
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: 140%;
+    color: rgba(255 255 255 / 80%);
+  }
+}

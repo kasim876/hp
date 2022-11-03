@@ -14,3 +14,24 @@
     color: var(--secondary);
   }
 }
+
+.btn-large {
+  display: block;
+  border: 1px solid var(--secondary);
+  padding: rem(18px) rem(10px);
+  max-width: rem(345px);
+  font-weight: 700;
+  font-size: rem(22px);
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--secondary);
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+  @include hover {
+    color: var(--secondary);
+    background-color: transparent;
+  }
+}
