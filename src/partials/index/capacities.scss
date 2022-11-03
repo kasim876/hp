@@ -1,0 +1,40 @@
+.capacities {
+  padding: var(--section-offset) 0;
+  background: var(--gradient);
+
+  &__item {
+    padding: rem(50px) 0;
+
+    &:not(:last-child) {
+      margin-bottom: rem(20px);
+    }
+
+    &:nth-child(2n) {
+      background-color: rgba(0 0 0 / 22%);
+
+      .flex-container {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__descr {
+    max-width: rem(515px);
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: 160%;
+    color: var(--white);
+  }
+
+  &__paragraph {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: em(50px, 24px);
+    }
+  }
+
+  .title {
+    color: var(--white);
+  }
+}
