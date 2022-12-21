@@ -3,6 +3,7 @@
   padding-bottom: rem(125px);
   background: var(--gradient);
   background-image: url("../images/hero-bg.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -15,6 +16,10 @@
     letter-spacing: -0.015em;
     text-transform: uppercase;
     color: var(--white);
+
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 
   &__descr {
@@ -25,5 +30,25 @@
     font-size: rem(24px);
     line-height: 140%;
     color: rgba(255 255 255 / 80%);
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  &__btn {
+    width: 345px;
+    height: 70px;
+    font-size: 1.5rem;
+
+    @include mobile {
+      width: 250px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+
+  @include resolution(960px) {
+    background-image: var(--gradient);
   }
 }

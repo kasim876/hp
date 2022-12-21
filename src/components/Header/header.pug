@@ -1,4 +1,8 @@
+include @cmps/Navigation/nav
+include @cmps/Burger/burger
+
 header.header 
-  .container.flex-container 
+  .container.header__container 
     a.header__logo(href="index.html") 
-    include @cmps/Navigation/nav
+    +nav(class="header__nav")
+    +burger

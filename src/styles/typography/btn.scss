@@ -1,32 +1,20 @@
-.btn-small {
-  display: block;
-  border: 1px solid var(--secondary);
-  padding: rem(6px) rem(10px);
-  width: rem(175px);
-  font-weight: 600;
-  font-size: rem(18px);
-  line-height: 183%;
-  text-align: center;
+.btn {
+  font-weight: 700;
+  font-size: 1rem;
   color: var(--white);
-  transition: color 0.25s ease-in-out;
+}
+
+.btn--transparent {
+  border: 1px solid var(--secondary);
+  transition: background-color 0.25s ease-in-out;
 
   @include hover {
-    color: var(--secondary);
+    background-color: var(--secondary);
   }
 }
 
-.btn-large {
-  display: block;
+.btn--fill {
   border: 1px solid var(--secondary);
-  padding: rem(18px) rem(10px);
-  max-width: rem(345px);
-  font-weight: 700;
-  font-size: rem(22px);
-  line-height: 160%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
   background-color: var(--secondary);
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 
@@ -36,13 +24,15 @@
   }
 }
 
-.btn-medium {
-  display: block;
-  padding: rem(10px);
-  width: 100%;
-  font-weight: 600;
-  font-size: rem(16px);
-  line-height: 150%;
-  color: var(--white);
+.btn--fill-big {
+  border: 1px solid var(--secondary);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   background-color: var(--secondary);
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+  @include hover {
+    color: var(--secondary);
+    background-color: transparent;
+  }
 }
