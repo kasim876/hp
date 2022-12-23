@@ -5,4 +5,7 @@ header.header
   .container.header__container 
     a.header__logo(href="index.html") 
     +nav(class="header__nav")
-    +burger
+    .header-mobile-menu 
+      +burger
+      +nav(class="js-menu header-mobile-menu__nav header-mobile-menu__nav--hidden")
+      .js-header-blackout.header-mobile-menu__blackout

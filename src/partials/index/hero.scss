@@ -1,11 +1,11 @@
 .hero {
   padding-top: rem(190px);
   padding-bottom: rem(125px);
-  background: var(--gradient);
   background-image: url("../images/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--gray);
 
   &__title {
     margin: 0;
@@ -49,6 +49,6 @@
   }
 
   @include resolution(960px) {
-    background-image: var(--gradient);
+    background-image: none;
   }
 }

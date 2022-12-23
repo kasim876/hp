@@ -3,10 +3,10 @@
 
 .header {
   position: absolute;
-  padding: rem(15px) 0;
+  padding: rem(16px) 0;
   width: 100%;
   background-color: rgba(255 255 255 / 1%);
-  backdrop-filter: blur(500px);
+  backdrop-filter: blur(30px);
 
   &__container {
     display: flex;
@@ -22,13 +22,64 @@
   }
 
   &__nav {
+    color: var(--white);
+
     @include resolution(960px) {
       display: none;
     }
   }
 
   &__btn {
-    width: 175px;
-    height: 45px;
+    width: rem(160px);
+    height: rem(48px);
   }
+}
+
+.header-mobile-menu {
+  position: relative;
+  display: none;
+
+  &__blackout {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__nav {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    z-index: 100;
+    border-radius: 4px;
+    padding: rem(30px) rem(15px);
+    color: var(--white);
+    background-color: var(--primary);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: all 0.3s ease-in-out;
+
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: rem(20px);
+    }
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10%);
+    }
+  }
+
+  @include resolution(960px) {
+    display: block;
+  }
+}
+
+.header-mobile-menu__nav--hidden ~ .header-mobile-menu__blackout {
+  opacity: 0;
+  visibility: hidden;
 }

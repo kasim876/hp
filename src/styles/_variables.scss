@@ -7,12 +7,13 @@
   --green: #e5f3ef;
   --white: #fff;
   --black: #000;
+  --gray: #1e212c;
 
   // values
 
-  --content-width: #{em(1130px)};
-  --container-offset: #{em(15px)};
-  --section-offset: #{em(65px)};
+  --content-width: #{rem(1130px)};
+  --container-offset: #{rem(15px)};
+  --section-offset: #{rem(65px)};
 
   // fonts
 
